@@ -1,0 +1,49 @@
+/* header */
+header {
+    padding: var(--margin-default);
+    background: var(--color-black);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav .menu span {
+    color: white;
+}
+
+/* main */
+
+section {
+    padding: var(--margin-default)
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    background: red;
+}
+
+.hero div {
+    width: 100%;
+    max-width: 1440px;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+}
+
+.content {
+    height: 50vh;
+    background: green;
+}

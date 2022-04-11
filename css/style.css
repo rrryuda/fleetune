@@ -1,49 +1,25 @@
-/* header */
-header {
-    padding: var(--margin-default);
-    background: var(--color-black);
+/* font size */
+html {
+    font-size: 20px;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
+h1 {
+    font-size: 4rem;
 }
 
-nav .logo {
-    position: relative;
-    left: calc(50% - 83.5px);
+p {
+    font-size: 16px;
 }
 
-nav .menu {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+/* media */
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
 }
 
-nav .menu span {
-    color: white;
-}
-
-/* main */
-
-section {
-    padding: var(--margin-default)
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    height: 50vh;
-    background: red;
-}
-
-.hero div {
-    padding-bottom: 2rem;
-}
-
-.content {
-    height: 50vh;
-    background: green;
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
 }
