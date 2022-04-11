@@ -1,0 +1,10 @@
+:root {
+    /* color */
+    --color-black: rgba(0,0,0,1);
+    /* margin */
+    --margin-default: 1rem;
+}
+
+html {
+    font-size: 20px;
+}
