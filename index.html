@@ -5,54 +5,66 @@
     <!-- meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/variables.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Open+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
     <header>
         <nav>
-            <div class="logo">
-                <svg width="167" height="24" viewBox="0 0 167 24" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M5.83333 4.5H19.3333V0H5.66667C2.53705 0 0 2.53705 0 5.66667V23H4.83333V13.3333H17.3333V9H4.83333V5.5C4.83333 4.94771 5.28105 4.5 5.83333 4.5ZM30.1667 18.1667C28.6019 18.1667 27.3333 16.8981 27.3333 15.3333V9.63608e-07H22.3333V15C22.3333 19.3262 25.8404 22.8333 30.1667 22.8333L42.3333 22.8333V18.1667L30.1667 18.1667ZM77 4.5L37.3333 4.5V9.63608e-07L77 0V4.5ZM153.833 4.5H166.667V0H153.833C150.704 0 148.167 2.53705 148.167 5.66667V17.3333C148.167 20.4629 150.704 23 153.833 23H166.667V18.3333H153.833C153.281 18.3333 152.833 17.8856 152.833 17.3333V13.3333H165.333V9H152.833V5.5C152.833 4.94771 153.281 4.5 153.833 4.5ZM55 13.3333H41.3333V9H55V13.3333ZM73 13.3333H59V9H73V13.3333ZM45.3333 22.8333H81V18.1666H45.3333V22.8333ZM79.6666 4.66667H87.3039V23H92.3039V4.66667H99.6666V0H79.6666V4.66667ZM107.333 13.8333C107.333 15.6378 107.65 17.0019 108.277 17.8696C108.789 18.5788 109.779 19.3333 112.167 19.3333C114.554 19.3333 115.544 18.5788 116.057 17.8696C116.683 17.0019 117 15.6378 117 13.8333V1.01725e-05H122V13.8333C122 16.0289 121.65 18.6647 120.11 20.797C118.456 23.0879 115.779 24 112.167 24C108.554 24 105.878 23.0879 104.223 20.797C102.683 18.6647 102.333 16.0289 102.333 13.8333V1.01725e-05H107.333V13.8333ZM131.385 0.666296C131.147 0.25397 130.707 0 130.23 0H125.333V23H130.333V8H130.667L138.948 22.3337C139.187 22.746 139.627 23 140.103 23H145V0H140V15H139.667L131.385 0.666296Z"
-                        fill="white" />
-                </svg>
-            </div>
-            <div class="menu">
-                <span>About</span>
-                <span>Contact</span>
-            </div>
+            <a class="logo">
+                <div class="fleetune-logo">
+                    <img src="source/logo.png">
+                </div>
+                <span class="hidden">플릿튠 로고</span>
+            </a>
+            <ol class="menu">
+                <li><a>회사소개</a></li>
+                <li><a>연락하기</a></li>
+                <li><a>찾아오시는 길</a></li>
+            </ol>
         </nav>
     </header>
 
     <main>
 
-        <section class="hero">
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div>
+                    <h3>배차 기술 혁신을 통해 교통의 미래를 바꿉니다</h3>
+                    <button>자세히 알아보기</button>
+                </div>
+            </div>
+            <div class="dim"></div>
+            <span class="hidden">플릿튠 히어로 이미지</span>
+        </section>
+
+        <section class="content">
             <div>
-                <h1>This is title</h1>
+                <h3>This is title</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <button>Button</button>
             </div>
         </section>
 
-        <section class="content">
-            block
-        </section>
-
-        <section class="content">
-            block
-        </section>
-
     </main>
 
     <footer>
-        footer
+        <div>
+            Fleetune
+        </div>
     </footer>
 
 </body>

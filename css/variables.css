@@ -1,6 +1,24 @@
 :root {
     /* color */
-    --color-black: rgba(0,0,0,1);
+    --color-white: rgba(255, 255, 255, 1);
+    --color-black: rgba(0, 0, 0, 1);
     /* margin */
-    --margin-default: 1rem;
+    --margin-default: 2rem;
+}
+
+/* media */
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 1024px) {
+    :root {
+        --margin-default: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 544px) {
+    :root {
+        --margin-default: 1rem;
+    }
 }
