@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/variables.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +23,7 @@
 
 <body>
 
+    <!--navigation-->
     <header>
         <nav>
             <a class="logo">
@@ -38,25 +40,47 @@
         </nav>
     </header>
 
+    <!--contents start-->
     <main>
 
-        <section class="hero" id="hero">
-            <div class="hero-content">
-                <div>
+        <!--hero-->
+        <section class="container" id="hero">
+            <div class="content">
+                <article class="hero">
                     <h3>배차 기술 혁신을 통해 교통의 미래를 바꿉니다</h3>
-                    <button>자세히 알아보기</button>
-                </div>
+                    <button class="btn">자세히 알아보기</button>
+                </article>
             </div>
             <div class="dim"></div>
             <span class="hidden">플릿튠 히어로 이미지</span>
         </section>
 
-        <section class="content">
-            <div>
-                <h3>This is title</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <button>Button</button>
+        <!--content 01-->
+        <section class="container">
+            <div class="content grid">
+                <div class="content-img" id="content-01"></div>
+                <article class="column">
+                    <span class="brow">배차 혁신 기술</span>
+                    <span class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book</span>
+                </article>
             </div>
+            <span class="hidden">플릿튠 히어로 이미지</span>
+        </section>
+
+        <!--content 02-->
+        <section class="container">
+            <div class="content grid">
+                <article class="column">
+                    <span class="brow">배차 혁신 기술</span>
+                    <span class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book</span>
+                </article>
+                <div class="content-img" id="content-02"></div>
+            </div>
+            <span class="hidden">플릿튠 히어로 이미지</span>
         </section>
 
     </main>

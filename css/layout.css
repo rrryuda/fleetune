@@ -8,7 +8,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1440px;
+    max-width: var(--width-large);
     height: 4rem;
     margin: 0 auto;
 }
@@ -41,22 +41,29 @@ section {
     padding: var(--margin-default)
 }
 
-/* main - hero */
-.hero {
+/* main */
+.container {
     display: flex;
     align-items: center;
-    height: 640px;
-    background: red;
 }
 
 #hero {
+    min-height: 640px;
+    margin-bottom: 4rem;
     background-image: url(../source/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.hero .dim {
+.content {
+    z-index: 1;
+    width: 100%;
+    max-width: var(--width-medium);
+    margin: 0 auto;
+}
+
+.dim {
     position: absolute;
     top: 0;
     left: 0;
@@ -65,43 +72,60 @@ section {
     background: rgba(0, 0, 0, .5);
 }
 
-.hero .hero-content {
-    z-index: 1;
-    width: 100%;
-    max-width: 1440px;
-    padding-bottom: 2rem;
-    margin: 0 auto;
-}
-
-.hero .hero-content div {
+.hero {
     max-width: 720px;
 }
 
-.hero .hero-content div h3 {
-    margin-bottom: 2rem;
+.hero h3 {
     color: var(--color-white);
+    margin-bottom: 48px;
 }
 
-.hero .hero-content div button {
-    font-size: 18px;
-    font-weight: 500;
-    padding: 16px 32px;
-    border: 1px solid var(--color-white);
-    background: rgba(0,0,0,.2);
-    color: var(--color-white);
-}
-
-/* main - content */
-.content {
-    display: flex;
+/* main sub */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    height: 50vh;
-    background: var(--color-white);
+    gap: 80px;
 }
 
-.content div {
+.content-img {
     width: 100%;
-    max-width: 1440px;
-    padding-bottom: 2rem;
-    margin: 0 auto;
+    max-width: 720px;
+    height: 480px;
+    background-position: center;
+    background-size: cover;
+    background: black;
 }
+
+#content-01 {
+    background-image: url("../source/cover.jpg");
+}
+
+#content-02 {
+    background-image: url("../source/cover.jpg");
+}
+
+/* media */
+@media screen and (max-width: 1440px) {
+    .content-img {
+        height: 440px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .content-img {
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 544px) {}

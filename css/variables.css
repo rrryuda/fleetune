@@ -4,6 +4,10 @@
     --color-black: rgba(0, 0, 0, 1);
     /* margin */
     --margin-default: 2rem;
+    /* width */
+    --width-small: 768px;
+    --width-medium: 1440px;
+    --width-large: 1920px;
 }
 
 /* media */
