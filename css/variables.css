@@ -4,6 +4,7 @@
     --color-black: rgba(0, 0, 0, 1);
     /* margin */
     --margin-default: 2rem;
+    --margin-row: 4rem;
     /* width */
     --width-small: 768px;
     --width-medium: 1440px;

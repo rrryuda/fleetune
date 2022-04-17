@@ -8,13 +8,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: var(--width-large);
+    max-width: var(--width-medium);
     height: 4rem;
     margin: 0 auto;
 }
 
 nav .fleetune-logo {
-    width: 124px;
+    width: 6rem;
 }
 
 nav .fleetune-logo img {
@@ -34,11 +34,34 @@ nav .menu li {
 }
 
 /* footer */
+footer {
+    padding: var(--margin-row) var(--margin-default);
+}
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: var(--width-large);
+    margin: 0 auto;
+}
+
+.footer .menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem 2rem;
+}
+
+.footer span {
+    font-size: 16px;
+}
 
 /* main */
 section {
-    padding: var(--margin-default)
+    padding: var(--margin-row) var(--margin-default)
 }
 
 /* main */
@@ -49,7 +72,7 @@ section {
 
 #hero {
     min-height: 640px;
-    margin-bottom: 4rem;
+    margin-bottom: var(--margin-row);
     background-image: url(../source/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,7 +109,14 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 80px;
+    gap: 4rem;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
 }
 
 .content-img {
@@ -108,23 +138,32 @@ section {
 
 /* media */
 @media screen and (max-width: 1440px) {
+
+    /* main sub */
     .content-img {
         height: 440px;
     }
 }
 
 @media screen and (max-width: 1024px) {
+
+    /* main sub */
     .content-img {
         height: 360px;
     }
 }
 
 @media screen and (max-width: 768px) {
+
+    /* main sub */
     .grid {
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
         gap: 40px;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
     }
 }
 
