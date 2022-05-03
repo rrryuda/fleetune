@@ -40,7 +40,7 @@ button {
 
 //font
 html {
-	font-family: 'Pretendard';
+    font-family: 'Pretendard';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: auto;
     -webkit-text-size-adjust: 100%;
@@ -67,10 +67,28 @@ h6 {
     line-height: 1.25em;
 }
 
-@for $i from 1 through 6 {
-    h#{$i} {
-        font-size: 1rem * (7 - $i);
-    }
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
 }
 
 p {

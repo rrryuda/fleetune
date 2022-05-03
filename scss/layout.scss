@@ -65,6 +65,7 @@ main {
 
         &.hero {
             padding: 10rem var(--side);
+            margin-bottom: var(--float);
             background-position: center;
             background-size: cover;
             background-image: url("../source/cover.jpg");
