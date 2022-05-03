@@ -37,7 +37,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: var(--spacer-s);
-    max-width: var(--width-l);
+    max-width: var(--width-m);
     padding: var(--float) var(--side);
     margin: 0 auto;
 
@@ -75,13 +75,18 @@ main {
                 margin: 0 auto;
 
                 * {
+                    text-align: center;
                     max-width: 60%;
+                    margin: 0 auto;
                     color: var(--color-white);
                 }
             }
         }
 
         &.content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacer-m);
             padding: var(--float) var(--side);
 
             .container {
@@ -96,7 +101,7 @@ main {
                     margin: 0 auto;
 
                     .column {
-                        &-m {
+                        &-s {
                             justify-content: center;
                         }
                     }
@@ -108,11 +113,6 @@ main {
                     gap: var(--spacer-m);
                     max-width: var(--width-m);
                     margin: 0 auto;
-
-                    .label {
-                        text-align: center;
-                        grid-column: span 3;
-                    }
                 }
 
                 &.items-02 {
@@ -121,11 +121,6 @@ main {
                     gap: var(--spacer-m);
                     max-width: var(--width-m);
                     margin: 0 auto;
-
-                    .label {
-                        text-align: center;
-                        grid-column: span 2;
-                    }
                 }
             }
         }

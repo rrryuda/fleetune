@@ -55,3 +55,10 @@
 		gap: var(--spacer-m);
 	}
 }
+
+// image
+div {
+    img {
+        border-radius: var(--corner-s);
+    }
+}

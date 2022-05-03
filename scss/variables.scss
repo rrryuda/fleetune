@@ -1,15 +1,15 @@
-// variables
+//  variables
 :root {
-    //color
+    // color
     --color-white: rgba(255, 255, 255, 1);
     --color-black: rgba(0, 0, 0, 1);
     --color-fg: rgba(0, 0, 0, 1);
     --color-fg-muted: rgba(0, 0, 0, .8);
     --color-fg-subtle: rgba(0, 0, 0, .6);
-    //spacing
+    // spacing
     --side: 2rem;
     --float: 4rem;
-    //margin spacer
+    // margin spacer
     --spacer-xxs: .25rem;
     --spacer-xs: .5rem;
     --spacer-s: 1rem;
@@ -17,10 +17,12 @@
     --spacer-l: 3rem;
     --spacer-xl: 4rem;
     --spacer-xxl: 5rem;
-    //width
+    // width
     --width-s: 768px;
-    --width-m: 1440px;
-    --width-l: 1920px;
+    --width-m: 1280px;
+    --width-l: 1440px;
+    // radius
+    --corner-s: .5rem;
 
     @media screen and (max-width: 1024px) {
         --side: 1.5rem;
