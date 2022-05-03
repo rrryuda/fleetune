@@ -1,0 +1,141 @@
+// header
+header {
+    padding: 0 var(--side);
+    background: var(--color-black);
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: var(--width-m);
+        height: var(--spacer-xl);
+        margin: 0 auto;
+
+        .fleetune-logo {
+            svg {
+                fill: var(--color-white);
+            }
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: var(--spacer-m);
+
+            li {
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--color-white);
+            }
+        }
+    }
+}
+
+// footer
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacer-s);
+    max-width: var(--width-l);
+    padding: var(--float) var(--side);
+    margin: 0 auto;
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacer-xs) var(--spacer-m);
+
+        span {
+            font-size: 16px;
+        }
+    }
+}
+
+// main
+main {
+    section {
+        p {
+            &.large {
+                color: var(--color-fg-muted);
+            }
+        }
+
+        &.hero {
+            padding: 10rem var(--side);
+            background-position: center;
+            background-size: cover;
+            background-image: url("../source/cover.jpg");
+
+            .container {
+                max-width: var(--width-m);
+                margin: 0 auto;
+
+                * {
+                    max-width: 60%;
+                    color: var(--color-white);
+                }
+            }
+        }
+
+        &.content {
+            padding: var(--float) var(--side);
+
+            .container {
+                max-width: var(--width-m);
+                margin: 0 auto;
+
+                &.rows {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: var(--spacer-m);
+                    max-width: var(--width-m);
+                    margin: 0 auto;
+
+                    .column {
+                        &-m {
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                &.items-03 {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: var(--spacer-m);
+                    max-width: var(--width-m);
+                    margin: 0 auto;
+
+                    .label {
+                        text-align: center;
+                        grid-column: span 3;
+                    }
+                }
+
+                &.items-02 {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: var(--spacer-m);
+                    max-width: var(--width-m);
+                    margin: 0 auto;
+
+                    .label {
+                        text-align: center;
+                        grid-column: span 2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// media
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 544px) {}
