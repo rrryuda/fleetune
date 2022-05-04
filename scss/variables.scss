@@ -6,9 +6,10 @@
     --color-black: rgba(0, 0, 0, 1);
     --color-overlay: rgba(0, 0, 0, .6);
     --color-fg: rgba(24, 28, 32, 1);
-    --color-fg-muted: rgba(124, 130, 136, 1);
+    --color-fg-muted: rgba(124, 132, 140, 1);
     --color-fg-subtle: rgba(168, 176, 184, 1);
     // spacing
+    --top: 4rem;
     --side: 2rem;
     --between: 5rem;
     // margin spacer
@@ -26,6 +27,7 @@
     --width-l: 1440px;
     // radius
     --corner-s: .5rem;
+    --corner-m: 1rem;
 
     @media screen and (max-width: 1024px) {
         --side: 1.5rem;
