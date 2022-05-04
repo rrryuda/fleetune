@@ -132,20 +132,33 @@ main {
             .badge {
                 display: flex;
                 align-items: center;
-                gap: var(--spacer-xs);
+                gap: var(--spacer-s);
+
+                h6 {
+                    color: var(--color-fg-muted);                    
+                }
 
                 &-c {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    gap: var(--spacer-xs);
+                    gap: var(--spacer-s);
+
+                    h6 {
+                        color: var(--color-fg-muted);                    
+                    }
                 }
             }
 
             .icon {
-                width: 3rem;
-                height: 3rem;
-                background: red;
+                width: 2.5rem;
+                height: 2.5rem;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    color: var(--color-fg-subtle);
+                }
             }
 
             .container {
@@ -182,19 +195,17 @@ main {
                         background: var(--color-lightgray);
 
                         &:nth-child(1) {
-                            background: red;
+                            background: rgb(255, 197, 197);
                         }
 
                         &:nth-child(2) {
-                            background: blue;
+                            background: rgb(207, 197, 255);
                         }
 
                         .atom {
                             position: absolute;
                             display: flex;
                             flex-direction: column;
-                            align-items: center;
-                            justify-content: center;
                             gap: var(--spacer-s);
                             z-index: 1;
                             top: 0;
@@ -202,10 +213,6 @@ main {
                             height: 100%;
                             padding: var(--spacer-l);
                             color: var(--color-white);
-
-                            * { 
-                                text-align: center;
-                            }
                         }
                     }
                 }
