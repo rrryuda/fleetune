@@ -2,17 +2,20 @@
 :root {
     // color
     --color-white: rgba(255, 255, 255, 1);
+    --color-lightgray: rgba(242, 242, 242, 1);
     --color-black: rgba(0, 0, 0, 1);
-    --color-fg: rgba(0, 0, 0, 1);
-    --color-fg-muted: rgba(0, 0, 0, .8);
-    --color-fg-subtle: rgba(0, 0, 0, .6);
+    --color-overlay: rgba(0, 0, 0, .6);
+    --color-fg: rgba(24, 28, 32, 1);
+    --color-fg-muted: rgba(124, 130, 136, 1);
+    --color-fg-subtle: rgba(168, 176, 184, 1);
     // spacing
     --side: 2rem;
-    --float: 4rem;
+    --between: 5rem;
     // margin spacer
     --spacer-xxs: .25rem;
     --spacer-xs: .5rem;
     --spacer-s: 1rem;
+    --spacer-r: 1.5rem;
     --spacer-m: 2rem;
     --spacer-l: 3rem;
     --spacer-xl: 4rem;
