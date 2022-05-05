@@ -105,7 +105,7 @@ main {
                     display: inline-block;
 
                     span {
-                        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .6) 100%);
+                        background: linear-gradient(180deg, var(--color-black) 0%, var(--color-overlay) 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                     }
@@ -142,7 +142,7 @@ main {
                 display: inline-block;
 
                 span {
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .6) 100%);
+                    background: linear-gradient(180deg, var(--color-black) 0%, var(--color-overlay) 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
@@ -154,6 +154,7 @@ main {
                 align-items: flex-start;
                 gap: var(--spacer-s);
                 max-width: var(--width-m);
+                padding: 0 var(--spacer-xs);
                 margin: 0 auto;
 
                 &.c {
@@ -161,7 +162,7 @@ main {
                     flex-direction: column;
                     align-items: center;
                     gap: var(--spacer-s);
-                    max-width: var(--width-xs);
+                    max-width: var(--width-s);
                     margin: 0 auto;
 
                     * {
@@ -172,22 +173,23 @@ main {
                         color: var(--color-fg-muted);
                     }
                 }
+
+                button {
+                    margin-top: var(--spacer-m);
+                }
             }
 
             .badge {
                 display: flex;
                 align-items: center;
-                gap: var(--spacer-xs);
+                gap: var(--spacer-s);
 
                 &.c {
-                    display: flex;
                     flex-direction: column;
-                    align-items: center;
                     justify-content: center;
-                    gap: var(--spacer-xs);
                 }
 
-                h6 {
+                h5 {
                     color: var(--color-fg-muted);
                 }
             }
@@ -228,15 +230,11 @@ main {
                         background: var(--color-lightgray);
 
                         &#product-1 {
-                            background-position: center;
-                            background-size: cover;
-                            background-image: url("../source/image/congestion.jpg");
+                            background: rgb(255, 184, 184);
                         }
 
                         &#product-2 {
-                            background-position: center;
-                            background-size: cover;
-                            background-image: url("../source/image/rural.jpg");
+                            background: rgb(160, 225, 255);
                         }
 
                         .atom {
@@ -247,10 +245,8 @@ main {
                             max-width: var(--width-xs);
                             color: var(--color-white);
 
-                            span {
-                                font-size: 1.25rem;
-                                font-weight: 600;
-                                line-height: 1.5em;
+                            .desc {
+                                opacity: .72;
                             }
                         }
 
@@ -306,10 +302,8 @@ main {
                             max-width: var(--width-xs);
                             color: var(--color-white);
 
-                            span {
-                                font-size: 1.25rem;
-                                font-weight: 600;
-                                line-height: 1.5em;
+                            .desc {
+                                opacity: .72;
                             }
                         }
                     }
@@ -385,15 +379,14 @@ main {
                             height: 100%;
                             color: var(--color-white);
 
-                            span {
-                                font-size: 1rem;
-                                font-weight: 600;
-                                line-height: 1.5em;
+                            .column {
+                                span {
+                                    font-weight: 600;
+                                }
                             }
 
-                            svg {
-                                width: 32px;
-                                height: 32px;
+                            .desc {
+                                opacity: .72;
                             }
                         }
                     }
