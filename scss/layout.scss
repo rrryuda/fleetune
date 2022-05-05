@@ -15,22 +15,39 @@ header {
         height: var(--top);
         margin: 0 auto;
 
-        .fleetune-logo {
+        .logo {
+            width: 108px;
+
             svg {
+                width: 100%;
                 fill: var(--color-white);
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 92px;
             }
         }
 
+        a {
+            font-size: .75rem;
+            font-weight: 600;
+            color: var(--color-white);
+        }
+
         .menu {
+            position: absolute;
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: var(--spacer-m);
+            left: calc(50% - 250px);
+            width: 500px;
+        }
 
-            li {
-                font-size: 16px;
-                font-weight: 600;
-                color: var(--color-white);
-            }
+        .contact {
+            padding: 8px 12px;
+            border: 1px solid var(--color-fg-subtle);
+            border-radius: 8px;
         }
     }
 }
@@ -76,18 +93,30 @@ main {
                 flex-direction: column;
                 align-items: center;
                 gap: var(--spacer-s);
-                max-width: var(--width-s);
+                max-width: var(--width-xs);
                 margin: 0 auto;
 
-                @at-root {
-                    .desc {
-                        color: var(--color-fg-subtle);
+                * {
+                    text-align: center;
+                }
+
+                h2 {
+                    font-weight: 800;
+                    display: inline-block;
+
+                    span {
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .6) 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
                     }
                 }
 
                 .desc {
-                    text-align: center;
                     color: var(--color-fg-muted);
+                }
+
+                button {
+                    margin-top: var(--spacer-m);
                 }
             }
 
@@ -108,6 +137,17 @@ main {
             gap: var(--spacer-l);
             padding: var(--between) var(--side);
 
+            h3 {
+                font-weight: 800;
+                display: inline-block;
+
+                span {
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .6) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+
             .heading {
                 display: flex;
                 flex-direction: column;
@@ -121,11 +161,15 @@ main {
                     flex-direction: column;
                     align-items: center;
                     gap: var(--spacer-s);
-                    max-width: var(--width-s);
+                    max-width: var(--width-xs);
                     margin: 0 auto;
 
                     * {
                         text-align: center;
+                    }
+
+                    .desc {
+                        color: var(--color-fg-muted);
                     }
                 }
             }
@@ -133,7 +177,7 @@ main {
             .badge {
                 display: flex;
                 align-items: center;
-                gap: var(--spacer-s);
+                gap: var(--spacer-xs);
 
                 h6 {
                     color: var(--color-fg-muted);
@@ -158,7 +202,7 @@ main {
                 svg {
                     width: 100%;
                     height: 100%;
-                    color: var(--color-fg-subtle);
+                    color: var(--color-blue);
                 }
             }
 
@@ -175,48 +219,52 @@ main {
 
                     .item {
                         overflow: hidden;
-                        height: 30rem;
+                        min-height: 30rem;
                         padding: var(--spacer-l);
                         border-radius: var(--corner-m);
-                        background-position: center;
-                        background-size: cover;
                         background: var(--color-lightgray);
 
                         &:nth-child(1) {
-                            background: var(--color-black);
+                            background-position: center;
+                            background-size: cover;
+                            background-image: url("../source/image/congestion.jpg");
                         }
 
                         &:nth-child(2) {
-                            background: var(--color-black);
+                            background-position: center;
+                            background-size: cover;
+                            background-image: url("../source/image/rural.jpg");
                         }
 
                         .atom {
                             display: flex;
                             z-index: 1;
                             flex-direction: column;
-                            align-items: center;
                             gap: var(--spacer-s);
-                            max-width: var(--width-s);
-                            margin: 0 auto;
+                            max-width: var(--width-xs);
                             color: var(--color-white);
 
-                            * {
-                                text-align: center;
+                            span {
+                                font-size: 1.25rem;
+                                font-weight: 600;
+                                line-height: 1.5em;
+                            }
+                        }
+
+                        @at-root {
+                            .dim {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                background: rgba(0, 0, 0, .4);
                             }
                         }
                     }
-                }
 
-                &.rows {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: var(--spacer-s);
-                    max-width: var(--width-m);
-                    margin: 0 auto;
-
-                    .column {
-                        &-s {
-                            justify-content: center;
+                    @media screen and (max-width: 768px) {
+                        .item {
+                            min-height: 24rem;
                         }
                     }
                 }
@@ -230,19 +278,21 @@ main {
 
                     .item {
                         overflow: hidden;
-                        height: 30rem;
+                        min-height: 30rem;
                         padding: var(--spacer-l);
                         border-radius: var(--corner-m);
-                        background-position: center;
-                        background-size: cover;
                         background: var(--color-lightgray);
 
                         &:nth-child(1) {
-                            background: var(--color-black);
+                            background-position: center;
+                            background-size: cover;
+                            background-image: url("../source/image/congestion.jpg");
                         }
 
                         &:nth-child(2) {
-                            background: var(--color-black);
+                            background-position: center;
+                            background-size: cover;
+                            background-image: url("../source/image/rural.jpg");
                         }
 
                         .atom {
@@ -250,7 +300,23 @@ main {
                             flex-direction: column;
                             gap: var(--spacer-s);
                             z-index: 1;
+                            max-width: var(--width-xs);
                             color: var(--color-white);
+
+                            span {
+                                font-size: 1.25rem;
+                                font-weight: 600;
+                                line-height: 1.5em;
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        grid-template-columns: 100%;
+
+                        .item {
+                            min-height: 24rem;
+                            padding: var(--spacer-l);
                         }
                     }
                 }
@@ -263,23 +329,27 @@ main {
                     margin: 0 auto;
 
                     .item {
-                        height: 30rem;
+                        min-height: 30rem;
                         padding: var(--spacer-m);
                         overflow: hidden;
                         border-radius: var(--corner-m);
-                        background-position: center;
-                        background-size: cover;
                         background: var(--color-lightgray);
 
                         &:nth-child(1) {
+                            background-position: center;
+                            background-size: cover;
                             background-image: url("../source/image/congestion.jpg");
                         }
 
                         &:nth-child(2) {
+                            background-position: center;
+                            background-size: cover;
                             background-image: url("../source/image/rural.jpg");
                         }
 
                         &:nth-child(3) {
+                            background-position: center;
+                            background-size: cover;
                             background-image: url("../source/image/repair.jpg");
                         }
 
@@ -290,15 +360,29 @@ main {
                             z-index: 1;
                             top: 0;
                             left: 0;
-                            color: var(--color-white);
-                        }
-
-                        .dim {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
+                            max-width: var(--width-xs);
                             height: 100%;
-                            background: rgba(0, 0, 0, .4);
+                            color: var(--color-white);
+
+                            span {
+                                font-size: 1rem;
+                                font-weight: 600;
+                                line-height: 1.5em;
+                            }
+
+                            svg {
+                                width: 32px;
+                                height: 32px;
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        grid-template-columns: 100%;
+
+                        .item {
+                            min-height: 24rem;
+                            padding: var(--spacer-l);
                         }
                     }
                 }
