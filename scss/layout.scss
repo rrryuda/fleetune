@@ -379,6 +379,22 @@ main {
                             height: 100%;
                             color: var(--color-white);
 
+                            .index {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 2rem;
+                                height: 2rem;
+                                border-radius: 50%;
+                                color: var(--color-white);
+                                background: rgba(255, 255, 255, .2);
+
+                                span {
+                                    font-size: 1.25rem;
+                                    font-weight: 700;
+                                }
+                            }
+
                             .column {
                                 span {
                                     font-weight: 600;
