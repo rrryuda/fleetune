@@ -134,7 +134,7 @@ main {
         &.content {
             display: flex;
             flex-direction: column;
-            gap: var(--spacer-l);
+            gap: var(--spacer-m);
             padding: var(--between) var(--side);
 
             h3 {
@@ -204,7 +204,8 @@ main {
                 svg {
                     width: 100%;
                     height: 100%;
-                    color: var(--color-blue);
+                    color: var(--color-gray);
+                    fill: var(--color-gray);
                 }
             }
 
@@ -226,13 +227,13 @@ main {
                         border-radius: var(--corner-m);
                         background: var(--color-lightgray);
 
-                        &:nth-child(1) {
+                        &#product-1 {
                             background-position: center;
                             background-size: cover;
                             background-image: url("../source/image/congestion.jpg");
                         }
 
-                        &:nth-child(2) {
+                        &#product-2 {
                             background-position: center;
                             background-size: cover;
                             background-image: url("../source/image/rural.jpg");
@@ -285,13 +286,13 @@ main {
                         border-radius: var(--corner-m);
                         background: var(--color-lightgray);
 
-                        &:nth-child(1) {
+                        &#solution-1 {
                             background-position: center;
                             background-size: cover;
                             background-image: url("../source/image/congestion.jpg");
                         }
 
-                        &:nth-child(2) {
+                        &#solution-2 {
                             background-position: center;
                             background-size: cover;
                             background-image: url("../source/image/rural.jpg");
@@ -337,22 +338,40 @@ main {
                         border-radius: var(--corner-m);
                         background: var(--color-lightgray);
 
-                        &:nth-child(1) {
+                        &#congestion {
                             background-position: center;
                             background-size: cover;
                             background-image: url("../source/image/congestion.jpg");
                         }
 
-                        &:nth-child(2) {
+                        &#rural {
                             background-position: center;
                             background-size: cover;
                             background-image: url("../source/image/rural.jpg");
                         }
 
-                        &:nth-child(3) {
+                        &#sustainable {
                             background-position: center;
                             background-size: cover;
                             background-image: url("../source/image/repair.jpg");
+                        }
+
+                        &#js {
+                            background-position: center;
+                            background-size: cover;
+                            background-image: url("../source/image/man.jpg");
+                        }
+
+                        &#ws {
+                            background-position: center;
+                            background-size: cover;
+                            background-image: url("../source/image/man.jpg");
+                        }
+
+                        &#career {
+                            background-position: center;
+                            background-size: cover;
+                            background-image: url("../source/image/man.jpg");
                         }
 
                         .atom {
