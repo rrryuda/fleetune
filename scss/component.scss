@@ -1,85 +1,39 @@
-// row
-.row {
-	display: flex;
-	align-items: center;
-
-	&.xxs {
-		display: flex;
-		align-items: center;
-		gap: var(--spacer-xxs);
-	}
-
-	&.xs {
-		display: flex;
-		align-items: center;
-		gap: var(--spacer-xs);
-	}
-
-	&.s {
-		display: flex;
-		align-items: center;
-		gap: var(--spacer-s);
-	}
-
-	&.m {
-		display: flex;
-		align-items: center;
-		gap: var(--spacer-m);
-	}
-}
-
 // column
 .column {
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
+	gap: var(--spacer-s);
 
 	&.xxs {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
 		gap: var(--spacer-xxs);
 	}
 
 	&.xs {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
 		gap: var(--spacer-xs);
 	}
 
-	&.s {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		gap: var(--spacer-s);
+	&.m {
+		gap: var(--spacer-m);
+	}
+}
+
+// row
+.row {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: var(--spacer-s);
+
+	&.xxs {
+		gap: var(--spacer-xxs);
+	}
+
+	&.xs {
+		gap: var(--spacer-xs);
 	}
 
 	&.m {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
 		gap: var(--spacer-m);
-	}
-
-	&.c {
-		align-items: center;
-	}
-}
-
-.between {
-	justify-content: space-between;
-}
-
-.end {
-	align-items: flex-end;
-	justify-content: flex-end;
-}
-
-// image
-div {
-	img {
-		border-radius: var(--corner-s);
 	}
 }
 
@@ -105,27 +59,38 @@ button {
 	}
 
 	&.link {
-		font-size: 1.25rem;
+		font-size: 1rem;
 		font-weight: 700;
 		padding: 1rem 2rem;
-		color: var(--color-blue);
 
 		svg {
-			width: 1.25rem;
-			height: 1.25rem;
-			fill: var(--color-blue);
+			width: 1rem;
+			height: 1rem;
 		}
 
 		&.s {
-			font-size: 1rem;
-			font-weight: 700;
+			font-size: 16px;
 			padding: 0;
+
+			svg {
+				width: 16px;
+				height: 16px;
+			}
+		}
+
+		&.white {
 			color: var(--color-white);
 
 			svg {
-				width: 1rem;
-				height: 1rem;
 				fill: var(--color-white);
+			}
+		}
+
+		&.neonblue {
+			color: var(--color-neonblue);
+
+			svg {
+				fill: var(--color-neonblue);
 			}
 		}
 	}

@@ -18,12 +18,13 @@
     <link rel="stylesheet" type="text/css" href="css/component.css">
 
     <!-- font -->
-    <link rel="stylesheet" type="text/css" href="font/pretendard-subset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
         rel="stylesheet">
+
+
 
     <!-- script -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -45,253 +46,175 @@
     <main>
 
         <!-- hero -->
-        <section class="hero">
-            <div class="container">
+        <section class="hero" id="c-black">
+            <div class="title">
                 <h2><span>교통 혁신의 미래</span></h2>
-                <h6 class="desc">우리는 고객의 차량을 가장 효율적으로 운영하고<br>지속가능한 솔루션을 제공합니다</h6>
-                <button class="primary">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                        <path d="M5 41V26.5H22V21.5H5L5 7L44 24L5 41Z" />
-                    </svg>
+                <h5>우리는 고객의 차량을 가장 효율적으로 운영하고<br>지속가능한 솔루션을 제공합니다.</h5>
+                <button class="link white">
                     문의하기
-                </button>
-            </div>
-            <div class="gradient"></div>
-        </section>
-
-        <!-- about us start -->
-        <section class="content">
-            <!-- heading -->
-            <div class="heading c">
-                <img src="source/place.jpg">
-                <div class="column xs c">
-                    <h3><span>모두의 이동을 혁신합니다.</span></h3>
-                    <h6 class="desc">
-                        다중 경로, 배차 최적화 기술을 통해 셔틀버스를 택시처럼 호출하고 노선 버스보다 빠르게 이동할 수 있는 SaaS 솔루션을 제공합니다.
-                        이를 포함한 MaaS 플랫폼을 구축하고 다양한 모빌리티 기업에게 경로 최적화 API를 제공해 고객 서비스 수준을 향상시키고자 합니다.
-                    </h6>
-                </div>
-            </div>
-        </section>
-
-        <section class="content">
-            <!-- heading -->
-            <div class="heading">
-                <div class="badge">
-                    <div class="icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M10 4.5C6.41015 4.5 3.5 7.41015 3.5 11V31H8.5V11C8.5 10.1716 9.17157 9.5 10 9.5H38C38.8284 9.5 39.5 10.1716 39.5 11V31H44.5V11C44.5 7.41015 41.5899 4.5 38 4.5H10ZM48 35H0V43H48V35ZM16.8284 21L21.4142 16.4142L18.5858 13.5858L11.1716 21L18.5858 28.4142L21.4142 25.5858L16.8284 21ZM26.5858 25.5858L31.1716 21L26.5858 16.4142L29.4142 13.5858L36.8284 21L29.4142 28.4142L26.5858 25.5858Z" />
-                        </svg>
-                    </div>
-                    <h5>존재 이유</h5>
-                </div>
-                <h3><span>우리가 해결하고자<br>하는 문제에요.</span></h3>
-            </div>
-            <!-- content body -->
-            <div class="container items-03">
-                <div class="item" id="congestion">
-                    <div class="atom">
-                        <div class="index">
-                            <span>1</span>
-                        </div>
-                        <h5>너무 많은 차량</h5>
-                        <h6 class="desc">
-                            대부분의 차량은 주차중이고 실제로 운행중인 차량의 비율은 10%에 지나지 않는다고 합니다.
-                        </h6>
-                    </div>
-                    <div class="dim"></div>
-                </div>
-                <div class="item" id="rural">
-                    <div class="atom">
-                        <div class="index">
-                            <span>2</span>
-                        </div>
-                        <h5>교통 소외 지역</h5>
-                        <h6 class="desc">
-                            차량은 계속 증가하지만 주로 대도시에 집중되고 교통 인프라가 부족한 지역은 여전히 이동에 대한 복지를 누리지 못하고 있습니다.
-                        </h6>
-                    </div>
-                    <div class="dim"></div>
-                </div>
-                <div class="item" id="sustainable">
-                    <div class="atom">
-                        <div class="index">
-                            <span>3</span>
-                        </div>
-                        <h5>지속 가능성 리스크</h5>
-                        <h6 class="desc">
-                            정부, 기업은 큰 비용을 감수하며 대중교통과 셔틀버스를 운영하지만 지속적으로 증가하는 비용과 이용률 감소로 운영 한계에 부딪히고 있습니다.
-                        </h6>
-                    </div>
-                    <div class="dim"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="content">
-            <!-- heading -->
-            <div class="heading">
-                <div class="badge">
-                    <div class="icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M39.607 4.85744C38.5232 4.30904 37.2977 4.00006 36 4.00006C31.5817 4.00006 28 7.58178 28 12.0001C28 13.1086 28.2255 14.1645 28.6331 15.1244L24 19.7574L16.9497 12.7072L21.8284 7.82849L16.1716 2.17163L2.17157 16.1716L7.82842 21.8285L12.7071 16.9498L19.7574 24.0001L4.87868 38.8787L9.12132 43.1214L32.8757 19.367C33.8356 19.7746 34.8914 20.0001 36 20.0001C40.4183 20.0001 44 16.4183 44 12.0001C44 10.7023 43.691 9.47678 43.1426 8.39295L37.7678 13.7678L34.2322 10.2322L39.607 4.85744ZM43.1213 38.8787L31.1213 26.8787L26.8787 31.1214L38.8787 43.1214L43.1213 38.8787Z" />
-                        </svg>
-                    </div>
-                    <h5>해결 방법</h5>
-                </div>
-                <h3><span>우리는 교통 혁신에<br>집중하고자 합니다.</span></h3>
-            </div>
-            <!-- content body -->
-            <div class="container items-02">
-                <div class="item" id="solution-1">
-                    <div class="atom">
-                        <h5>기업이나 대학의 셔틀버스를<br>스마트하게 합니다.</h5>
-                        <h6 class="desc">
-                            수도권을 제외한 대부분의 산업 단지나 대학들은 열악한 교통 여건으로 인해 늘 불편함을 겪고 있으며 셔틀버스를 마련해 보완하고 있지만
-                            긴 노선과 이동시간으로 인해 이용율이 떨어져 운영규모를 늘리지 못하는 악순환에 빠져 있습니다.
-                        </h6>
-                    </div>
-                    <div class="dim"></div>
-                </div>
-                <div class="item" id="solution-2">
-                    <div class="atom">
-                        <h5>모빌리티 서비스에 최적화된<br>경로 API를 제공합니다.</h5>
-                        <h6 class="desc">
-                            모빌리티의 영역이 확대됨에 따라 다양한 서비스에서 여러 지점을 경유하는 기능을 사용할 수 있습니다.
-                        </h6>
-                    </div>
-                    <div class="dim"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- solution start -->
-        <section class="content">
-            <!-- heading -->
-            <div class="heading c">
-                <div class="badge c">
-                    <div class="icon large">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M10 4.5C6.41015 4.5 3.5 7.41015 3.5 11V31H8.5V11C8.5 10.1716 9.17157 9.5 10 9.5H38C38.8284 9.5 39.5 10.1716 39.5 11V31H44.5V11C44.5 7.41015 41.5899 4.5 38 4.5H10ZM48 35H0V43H48V35ZM16.8284 21L21.4142 16.4142L18.5858 13.5858L11.1716 21L18.5858 28.4142L21.4142 25.5858L16.8284 21ZM26.5858 25.5858L31.1716 21L26.5858 16.4142L29.4142 13.5858L36.8284 21L29.4142 28.4142L26.5858 25.5858Z" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="column xxs c">
-                    <h3><span>교통을 혁신합니다.</span></h3>
-                    <h6 class="desc">여기에 이정도 볼륨의 추가적인 텍스트<br>문구를 넣어주시면 좋을 것 같습니다.</h6>
-                </div>
-            </div>
-            <!-- content body -->
-            <div class="container columns">
-                <div class="item" id="product-1">
-                    <div class="atom">
-                        <h5>스마트 셔틀서비스</h5>
-                        <h6 class="desc">
-                            수도권을 제외한 대부분의 산업 단지나 대학들은 열악한 교통 여건으로 인해 늘 불편함을 겪고 있으며 셔틀버스를 마련해 보완하고 있지만
-                            긴 노선과 이동시간으로 인해 이용율이 떨어져 운영규모를 늘리지 못하는 악순환에 빠져 있습니다.
-                        </h6>
-                    </div>
-                </div>
-                <div class="item" id="product-2">
-                    <div class="atom">
-                        <h5>실시간 경로 최적화 API</h5>
-                        <h6 class="desc">
-                            모빌리티의 영역이 확대됨에 따라 다양한 서비스에서 여러 지점을 경유하는 기능을 사용할 수 있습니다.
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="content">
-            <!-- heading -->
-            <div class="heading c">
-                <div class="badge c">
-                    <div class="icon large">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M10 4.5C6.41015 4.5 3.5 7.41015 3.5 11V31H8.5V11C8.5 10.1716 9.17157 9.5 10 9.5H38C38.8284 9.5 39.5 10.1716 39.5 11V31H44.5V11C44.5 7.41015 41.5899 4.5 38 4.5H10ZM48 35H0V43H48V35ZM16.8284 21L21.4142 16.4142L18.5858 13.5858L11.1716 21L18.5858 28.4142L21.4142 25.5858L16.8284 21ZM26.5858 25.5858L31.1716 21L26.5858 16.4142L29.4142 13.5858L36.8284 21L29.4142 28.4142L26.5858 25.5858Z" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="column xxs c">
-                    <h3><span>교통 혁신을 함께 만들어요.</span></h3>
-                    <h6 class="desc">플릿튠은 상시 채용중입니다.</h6>
-                </div>
-                <button class="link">
-                    지원서 작성하기
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M28.7574 24L12.8787 8.1213L17.1213 3.87866L37.2426 24L17.1213 44.1213L12.8787 39.8787L28.7574 24Z" />
                     </svg>
                 </button>
             </div>
-            <!-- content body -->
-            <div class="container items-03">
-                <div class="item" id="js">
-                    <div class="atom">
-                        <div class="column">
-                            <h5>김지성</h5>
-                            <span>CEO, Co-Founder</span>
-                        </div>
-                        <h6 class="desc">
-                            한 줄 문장
-                        </h6>
-                    </div>
-                    <div class="dim"></div>
+            <div class="gradient"></div>
+        </section>
+
+        <!-- about us start -->
+        <!-- about us -->
+        <section class="content">
+            <div class="container columns-02">
+                <div class="row">
+                    <h6 class="brow">About Fleetune</h6>
+                    <h3>우리는 모두의<br>이동을 혁신합니다.</h3>
+                    <span class="desc">
+                        다중 경로, 배차 최적화 기술을 통해 셔틀버스를 택시처럼 호출하고 노선 버스보다 빠르게 이동할 수 있는 SaaS 솔루션을 제공합니다.
+                        이를 포함한 MaaS 플랫폼을 구축하고 다양한 모빌리티 기업에게 경로 최적화 API를 제공해 고객 서비스 수준을 향상시키고자 합니다.
+                    </span>
                 </div>
-                <div class="item" id="ws">
-                    <div class="atom">
-                        <div class="column">
-                            <h5>김완수</h5>
-                            <span>CEO, Co-Founder</span>
-                        </div>
-                        <h6 class="desc">
-                            한 줄 문장
-                        </h6>
-                    </div>
-                    <div class="dim"></div>
+                <div class="image"></div>
+            </div>
+        </section>
+
+        <!-- why we do -->
+        <section class="content" id="c-black">
+            <div class="container">
+                <div class="row">
+                    <h6 class="brow">Why we do</h6>
+                    <h3>우리가 해결하고자<br>하는 문제에요.</h3>
                 </div>
-                <div class="item" id="career">
-                    <div class="atom between">
-                        <h5>인재채용</h5>
-                        <button class="link s end">
-                            전체 채용공고 보기
+            </div>
+            <div class="container columns-04">
+                <div class="row" id="congestion">
+                    <div class="icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.14059 15L6.54059 3H27.4594L29.0594 11H24.9406L24 7H10L8.25941 15H16.4614L14.4704 24.9549L11.263 28H8V33H2V17L4.14059 15ZM6 19H10V23H6V19ZM18.1406 27L20.5406 15H41.4594L43.8594 27L46 29V45H40V40H22V45H16V29L18.1406 27ZM38 19L39.7406 27H22.2594L24 19H38ZM24 31H20V35H24V31ZM38 31H42V35H38V31Z" />
+                        </svg>
+                    </div>
+                    <div class="row xxs">
+                        <h5>너무 많은 차량</h5>
+                        <span class="desc">
+                            대부분의 차량은 주차중이고 실제로 운행중인 차량의 비율은 10%에 지나지 않는다고 합니다.
+                        </span>
+                    </div>
+                </div>
+                <div class="row" id="rural">
+                    <div class="icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M46.6641 8.49615L43.3359 3.50385L35.4126 8.78605C32.5097 5.83205 28.4688 4 24 4C15.1634 4 8 11.1634 8 20C8 21.7378 8.61882 23.7977 9.61306 25.9857L1.3359 31.5038L4.6641 36.4961L46.6641 8.49615ZM15.9188 36.2041L39.9985 20.151C39.8192 29.0305 24 46 24 46C24 46 19.9457 41.6509 15.9188 36.2041Z" />
+                        </svg>
+                    </div>
+                    <div class="row xxs">
+                        <h5>교통 소외 지역</h5>
+                        <span class="desc">
+                            차량은 계속 증가하지만 주로 대도시에 집중되고 교통 인프라가 부족한 지역은 여전히 이동에 대한 복지를 누리지 못하고 있습니다.
+                        </span>
+                    </div>
+                </div>
+                <div class="row" id="sustainable">
+                    <div class="icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M36.7574 32L24 19.2426L16 27.2426L0.878677 12.1213L5.12132 7.87866L16 18.7573L24 10.7573L41 27.7573V17H47V38H26V32H36.7574Z" />
+                        </svg>
+                    </div>
+                    <div class="row xxs">
+                        <h5>지속 가능성 리스크</h5>
+                        <span class="desc">
+                            정부, 기업은 큰 비용을 감수하며 대중교통과 셔틀버스를 운영하지만 지속적으로 증가하는 비용과 이용률 감소로 운영 한계에 부딪히고 있습니다.
+                        </span>
+                    </div>
+                </div>
+                <div class="row" id="sustainable">
+                    <div class="icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M36.7574 32L24 19.2426L16 27.2426L0.878677 12.1213L5.12132 7.87866L16 18.7573L24 10.7573L41 27.7573V17H47V38H26V32H36.7574Z" />
+                        </svg>
+                    </div>
+                    <div class="row xxs">
+                        <h5>지속 가능성 리스크</h5>
+                        <span class="desc">
+                            정부, 기업은 큰 비용을 감수하며 대중교통과 셔틀버스를 운영하지만 지속적으로 증가하는 비용과 이용률 감소로 운영 한계에 부딪히고 있습니다.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- how we do -->
+        <section class="content">
+            <div class="container columns-02">
+                <div class="row m">
+                    <div class="row">
+                        <h6 class="brow">How we do</h6>
+                        <h3>우리는 모두의<br>이동을 혁신합니다.</h3>
+                        <span class="desc">
+                            다중 경로, 배차 최적화 기술을 통해 셔틀버스를 택시처럼 호출하고 노선 버스보다 빠르게 이동할 수 있는 SaaS 솔루션을 제공합니다.
+                            이를 포함한 MaaS 플랫폼을 구축하고 다양한 모빌리티 기업에게 경로 최적화 API를 제공해 고객 서비스 수준을 향상시키고자 합니다.
+                        </span>
+                    </div>
+                    <div class="image"></div>
+                </div>
+                <div class="image" style="height: 100%;"></div>
+            </div>
+        </section>
+
+        <!-- solution 01 -->
+        <section class="content" id="c-lightg">
+            <div class="container columns-02">
+                <div class="row">
+                    <h6 class="brow">Smart Shuttle Bus</h6>
+                    <h3>스마트 셔틀서비스</h3>
+                    <span class="desc">
+                        다중 경로, 배차 최적화 기술을 통해 셔틀버스를 택시처럼 호출하고 노선 버스보다 빠르게 이동할 수 있는 SaaS 솔루션을 제공합니다.
+                        이를 포함한 MaaS 플랫폼을 구축하고 다양한 모빌리티 기업에게 경로 최적화 API를 제공해 고객 서비스 수준을 향상시키고자 합니다.
+                    </span>
+                </div>
+                <div class="image"></div>
+            </div>
+        </section>
+
+        <!-- solution 02 -->
+        <section class="content">
+            <div class="container columns-02">
+                <div class="row">
+                    <h6 class="brow">Fleetune API</h6>
+                    <h3>실시간 경로 최적화 API</h3>
+                    <span class="desc">
+                        다중 경로, 배차 최적화 기술을 통해 셔틀버스를 택시처럼 호출하고 노선 버스보다 빠르게 이동할 수 있는 SaaS 솔루션을 제공합니다.
+                        이를 포함한 MaaS 플랫폼을 구축하고 다양한 모빌리티 기업에게 경로 최적화 API를 제공해 고객 서비스 수준을 향상시키고자 합니다.
+                    </span>
+                </div>
+                <div class="image"></div>
+            </div>
+        </section>
+
+        <!-- how we do -->
+        <section class="content" id="c-lightg">
+            <div class="container columns-02">
+                <div class="row m">
+                    <div class="row">
+                        <h6 class="brow">Career</h6>
+                        <h3>미래 교통을 혁신할<br>인재를 찾고있습니다.</h3>
+                        <span class="desc">
+                            다중 경로, 배차 최적화 기술을 통해 셔틀버스를 택시처럼 호출하고 노선 버스보다 빠르게 이동할 수 있는 SaaS 솔루션을 제공합니다.
+                            이를 포함한 MaaS 플랫폼을 구축하고 다양한 모빌리티 기업에게 경로 최적화 API를 제공해 고객 서비스 수준을 향상시키고자 합니다.
+                        </span>
+                        <button class="link s neonblue">
+                            채용공고 보기
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M28.7574 24L12.8787 8.1213L17.1213 3.87866L37.2426 24L17.1213 44.1213L12.8787 39.8787L28.7574 24Z" />
                             </svg>
                         </button>
                     </div>
-                    <div class="dim"></div>
+                    <div class="image"></div>
                 </div>
-            </div>
-        </section>
-
-        <section class="content">
-            <!-- heading -->
-            <div class="heading">
-                <div class="badge">
-                    <div class="icon">
-                        <i class="fa-solid fa-people-group"></i>
-                    </div>
-                    <h5>뉴스</h5>
-                </div>
-            </div>
-            <!-- content body -->
-            <div class="container items-03">
-                <div class="item">
-                    <div class="atom"></div>
-                </div>
-                <div class="item">
-                    <div class="atom"></div>
-                </div>
-                <div class="item">
-                    <div class="atom"></div>
-                </div>
+                <div class="image" style="height: 100%;"></div>
             </div>
         </section>
 

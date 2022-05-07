@@ -35,17 +35,12 @@ button {
 
 //font
 html {
-    font-family: 'Pretendard';
+    font-family: 'Inter', 'Noto Sans KR', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: auto;
     -webkit-text-size-adjust: 100%;
     word-break: keep-all;
-    font-size: 20px;
-
-    //media
-    @media screen and (max-width: 1440px) {
-        font-size: 18px;
-    }
+    font-size: 18px;
 
     @media screen and (max-width: 768px) {
         font-size: 16px;
@@ -67,28 +62,28 @@ h6 {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 2.5rem;
-}
-
-h4 {
     font-size: 2rem;
 }
 
-h5 {
+h4 {
     font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
     line-height: 1.5em;
 }
 
 h6 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.5em;
 }
 
@@ -108,11 +103,4 @@ p {
 
 li {
     flex-shrink: 0;
-}
-
-span {
-    &.label {
-        font-size: 1.25rem;
-        font-weight: 600;
-    }
 }
