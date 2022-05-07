@@ -177,6 +177,16 @@ main {
                 background-image: url('../source/place.jpg');
             }
 
+            .item {
+                height: 480px;
+                padding: var(--spacer-m);
+                background: var(--color-gray-02);
+
+                .desc {
+                    margin-right: var(--spacer-l);
+                }
+            }
+
             .container {
                 display: flex;
                 z-index: 1;
