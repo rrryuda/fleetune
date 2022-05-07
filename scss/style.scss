@@ -47,6 +47,11 @@ html {
     }
 }
 
+body {
+    color: var(--color-fg);
+    background: var(--color-bg);
+}
+
 .hidden {
     display: none;
 }

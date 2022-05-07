@@ -101,6 +101,7 @@ main {
                 }
 
                 h2 {
+                    font-weight: 900;
                     display: inline-block;
                     user-select: none;
 
@@ -134,11 +135,12 @@ main {
         &.content {
             display: flex;
             flex-direction: column;
-            gap: var(--spacer-l);
+            gap: var(--spacer-xl);
             padding: var(--between) var(--side) calc(var(--between) + var(--spacer-m));
 
             .brow {
                 font-weight: 600;
+                margin-bottom: var(--spacer-s);
                 color: var(--color-neonblue);
             }
 
@@ -170,10 +172,14 @@ main {
             .image {
                 height: 480px;
                 background: var(--color-gray-02);
+                background-position: center;
+                background-size: cover;
+                background-image: url('../source/place.jpg');
             }
 
             .container {
                 display: flex;
+                z-index: 1;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: var(--spacer-s);
@@ -183,6 +189,10 @@ main {
                 &.columns-02 {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
+
+                    .info {
+                        padding-right: 3rem;
+                    }
                 }
 
                 &.columns-04 {
@@ -191,22 +201,10 @@ main {
                     gap: var(--spacer-s);
                     max-width: var(--width-m);
                     margin: 0 auto;
-
-                    .item {
-                        display: flex;
-                        flex-direction: column;
-                        gap: var(--spacer-s);
-
-                        &#congestion {}
-
-                        &#rural {}
-
-                        &#sustainable {}
-                    }
                 }
             }
 
-            &#c-black {
+            &.c-black {
                 background: var(--color-darkgray);
                 color: var(--color-white);
 
@@ -217,8 +215,19 @@ main {
                 }
             }
 
-            &#c-lightg {
+            &.c-lightg {
                 background: var(--color-gray-01);
+            }
+
+            #traffic {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                opacity: .2;
+                background: rgba(0, 0, 0, .8);
+                background-position: center;
+                background-size: cover;
+                background-image: url("../source/image/traffic.jpg");
             }
         }
     }
