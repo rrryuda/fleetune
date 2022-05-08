@@ -165,7 +165,6 @@ main {
                     width: 100%;
                     height: 100%;
                     fill: currentColor;
-                    opacity: .5;
                 }
             }
 
@@ -178,8 +177,8 @@ main {
             }
 
             .item {
-                height: 480px;
-                padding: var(--spacer-m);
+                min-height: 480px;
+                padding: var(--spacer-l);
                 background: var(--color-gray-02);
 
                 .desc {
@@ -202,6 +201,16 @@ main {
 
                     .info {
                         padding-right: 3rem;
+                    }
+
+                    #howToA {
+                        color: rgba(65, 170, 215, 1);
+                        background: rgba(205, 240, 255, 1);
+                    }
+
+                    #howToB {
+                        color: rgba(65, 170, 215, 1);
+                        background: rgba(205, 240, 255, 1);
                     }
                 }
 
