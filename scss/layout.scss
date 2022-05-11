@@ -59,14 +59,21 @@ footer {
     padding: var(--between) var(--side);
     background: var(--color-gray-01);
 
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--spacer-m);
+        max-width: var(--width-m);
+        margin: 0 auto;
+    }
+
     .menu {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
         gap: var(--spacer-xs) var(--spacer-m);
-        max-width: var(--width-m);
-        margin: 0 auto;
+        width: auto;
 
         span {
             font-size: 16px;
