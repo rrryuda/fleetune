@@ -56,9 +56,8 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: var(--spacer-s);
-    max-width: var(--width-m);
     padding: var(--between) var(--side);
-    margin: 0 auto;
+    background: var(--color-gray-01);
 
     .menu {
         display: flex;
@@ -66,6 +65,8 @@ footer {
         align-items: center;
         justify-content: center;
         gap: var(--spacer-xs) var(--spacer-m);
+        max-width: var(--width-m);
+        margin: 0 auto;
 
         span {
             font-size: 16px;
@@ -138,6 +139,32 @@ main {
             gap: var(--spacer-xl);
             padding: var(--between) var(--side) calc(var(--between) + var(--spacer-m));
 
+            &.c-black {
+                background: var(--color-darkgray);
+                color: var(--color-white);
+
+                span {
+                    &.desc {
+                        color: var(--color-bg-muted);
+                    }
+                }
+            }
+
+            &.c-gray {
+                background: var(--color-gray-01);
+            }
+
+            #traffic {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                opacity: .2;
+                background: rgba(0, 0, 0, .8);
+                background-position: center;
+                background-size: cover;
+                background-image: url("../source/image/traffic.jpg");
+            }
+
             .brow {
                 font-weight: 600;
                 margin-bottom: var(--spacer-s);
@@ -155,10 +182,6 @@ main {
                 @media screen and (max-width: 768px) {
                     font-size: 15px;
                 }
-            }
-
-            button {
-                margin: 1rem 0;
             }
 
             .icon {
@@ -182,11 +205,20 @@ main {
 
             .item {
                 min-height: 480px;
-                padding: var(--spacer-l);
+                padding: var(--spacer-m);
                 background: var(--color-gray-02);
+
+                h4,
+                button {
+                    z-index: 1;
+                }
 
                 .desc {
                     margin-right: var(--spacer-l);
+                }
+
+                iframe {
+                    height: 100%;
                 }
             }
 
@@ -205,6 +237,10 @@ main {
 
                     .info {
                         padding-right: 3rem;
+
+                        button {
+                            margin: 1rem 0;
+                        }
                     }
 
                     #howToA {
@@ -216,6 +252,20 @@ main {
                         color: rgba(65, 170, 215, 1);
                         background: rgba(205, 240, 255, 1);
                     }
+
+                    #career {
+                        color: var(--color-white);
+                        background: var(--color-gray-02);
+                        background-position: center;
+                        background-size: cover;
+                        background-image: url('../source/image/career.jpg');
+                    }
+
+                    #map {
+                        height: 100%;
+                        padding: 0;
+                        background: var(--color-gray-02);
+                    }
                 }
 
                 &.columns-04 {
@@ -225,32 +275,6 @@ main {
                     max-width: var(--width-m);
                     margin: 0 auto;
                 }
-            }
-
-            &.c-black {
-                background: var(--color-darkgray);
-                color: var(--color-white);
-
-                span {
-                    &.desc {
-                        color: var(--color-bg-muted);
-                    }
-                }
-            }
-
-            &.c-lightg {
-                background: var(--color-gray-01);
-            }
-
-            #traffic {
-                position: absolute;
-                top: 0;
-                height: 100%;
-                opacity: .2;
-                background: rgba(0, 0, 0, .8);
-                background-position: center;
-                background-size: cover;
-                background-image: url("../source/image/traffic.jpg");
             }
         }
     }
