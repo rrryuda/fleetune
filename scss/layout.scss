@@ -211,11 +211,14 @@ main {
             }
 
             .item {
+                overflow: hidden;
                 min-height: 480px;
                 padding: var(--spacer-m);
+                border-radius: var(--corner-s);
                 background: var(--color-gray-02);
 
                 h4,
+                h6,
                 button {
                     z-index: 1;
                 }
@@ -272,6 +275,13 @@ main {
                         height: 100%;
                         padding: 0;
                         background: var(--color-gray-02);
+                    }
+
+                    #product {
+                        position: absolute;
+                        z-index: 0;
+                        top: 300px;
+                        left: 0;
                     }
                 }
 
