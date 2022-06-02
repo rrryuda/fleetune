@@ -207,11 +207,7 @@ main {
             }
 
             .image {
-                height: 480px;
-                background: var(--color-gray-02);
-                background-position: center;
-                background-size: cover;
-                background-image: url('../source/place.jpg');
+                height: auto;
             }
 
             .item {
