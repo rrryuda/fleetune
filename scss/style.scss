@@ -53,6 +53,13 @@ html {
 body {
     color: var(--color-fg);
     background: var(--color-bg);
+
+    &.loading {
+        opacity: 0;
+    }
+    &.loaded {
+        opacity: 1;
+    }
 }
 
 .hidden {
