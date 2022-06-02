@@ -237,6 +237,7 @@ main {
                     font-weight: 500;
                     z-index: 1;
                     margin: var(--spacer-s) var(--spacer-l) 0 0;
+                    color: var(--color-fg-muted);
 
                     @media screen and (max-width:543px) {
                         margin: var(--spacer-s) 0 0 0;
