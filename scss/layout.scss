@@ -186,7 +186,7 @@ main {
                 &.desc {
                     font-size: 16px;
                     font-weight: 500;
-                    line-height: 28px;
+                    line-height: 26px;
                     color: var(--color-fg-muted);
                 }
 
@@ -312,7 +312,7 @@ main {
                     }
 
                     .info {
-                        padding-right: 3rem;
+                        padding: 0 3rem 0 0;
 
                         @media screen and (max-width:544px) {
                             padding: 0;
@@ -340,11 +340,11 @@ main {
                         }
 
                         &#solution-01 {
-                            padding: var(--spacer-l) 0 0 var(--spacer-l);
                             background: white;
 
-                            @media screen and (max-width: 1024px) {
-                                padding: var(--spacer-m) 0 0 var(--spacer-m);
+                            img {
+                                position: absolute;
+                                width: 100%;
                             }
                         }
 
