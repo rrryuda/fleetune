@@ -179,7 +179,7 @@ main {
 
             .brow {
                 font-weight: 600;
-                margin-bottom: var(--spacer-s);
+                margin-bottom: var(--spacer-xs);
                 color: var(--color-neonblue);
             }
 
@@ -351,13 +351,8 @@ main {
                     }
 
                     &#map {
-                        height: 100%;
                         padding: 0;
                         background: var(--color-gray-02);
-
-                        @media screen and (max-width: 720px) {
-                            height: 36rem;
-                        }
                     }
 
                     button {
