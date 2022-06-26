@@ -78,10 +78,6 @@ footer {
         align-items: center;
         gap: var(--spacer-xs) var(--spacer-m);
         width: auto;
-
-        span {
-            font-size: 16px;
-        }
     }
 }
 
@@ -166,7 +162,8 @@ main {
                 background: var(--color-gray-01);
             }
 
-            #traffic {
+            #traffic,
+            #api {
                 position: absolute;
                 top: 0;
                 height: 100%;
@@ -174,7 +171,15 @@ main {
                 background: rgba(0, 0, 0, .8);
                 background-position: center;
                 background-size: cover;
+                background-image: url("../source/image/api.jpg");
+            }
+
+            #traffic {
                 background-image: url("../source/image/traffic.jpg");
+            }
+
+            #api {
+                background-image: url("../source/image/api.jpg");
             }
 
             .brow {
@@ -185,7 +190,6 @@ main {
 
             span {
                 &.desc {
-                    font-size: 18px;
                     font-weight: 700;
                     line-height: 30px;
                     color: var(--color-fg-muted);
@@ -200,6 +204,17 @@ main {
             .icon {
                 width: 2rem;
                 height: 2rem;
+
+                &-large {
+                    width: 3rem;
+                    height: 3rem;
+
+                    svg {
+                        width: 100%;
+                        height: 100%;
+                        fill: currentColor;
+                    }
+                }
 
                 svg {
                     width: 100%;
@@ -276,13 +291,13 @@ main {
 
                 .item {
                     overflow: hidden;
-                    height: 32rem;
+                    height: 28rem;
                     padding: var(--spacer-l);
                     border-radius: var(--corner-m);
                     background: var(--color-gray-02);
 
                     @media screen and (max-width: 720px) {
-                        height: 24rem;
+                        height: 20rem;
                         padding: var(--spacer-m);
                     }
 
