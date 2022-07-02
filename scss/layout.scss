@@ -100,7 +100,7 @@ main {
                 flex-direction: column;
                 align-items: center;
                 gap: var(--spacer-s);
-                max-width: var(--width-xs);
+                max-width: var(--width-s);
                 margin: 0 auto;
 
                 * {
@@ -108,7 +108,7 @@ main {
                     color: var(--color-white);
                 }
 
-                h2 {
+                h1 {
                     font-weight: 900;
                     display: inline-block;
                     user-select: none;
@@ -245,6 +245,12 @@ main {
                     @media screen and (max-width: 720px) {
                         grid-template-columns: 100%;
                     }
+
+                    .info-center {
+                        div {
+                            margin-bottom: var(--spacer-m);
+                        }
+                    }
                 }
 
                 &.columns-04 {
@@ -288,6 +294,18 @@ main {
                     }
                 }
 
+                .info-center {
+                    padding: 0 var(--spacer-l);
+
+                    @media screen and (max-width: 1024px) {
+                        padding: 0 var(--spacer-m);
+                    }
+
+                    @media screen and (max-width: 544px) {
+                        padding: 0;
+                    }
+                }
+
                 .item {
                     overflow: hidden;
                     height: 28rem;
@@ -309,7 +327,7 @@ main {
                         }
                     }
 
-                    &#mission,
+                    &#solution,
                     &#how-01,
                     &#how-02,
                     &#how-03,
@@ -322,7 +340,7 @@ main {
                         background-size: cover;
                     }
 
-                    &#mission {
+                    &#solution {
                         background-image: url('../source/image/solution.jpg');
                     }
 
