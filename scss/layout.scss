@@ -191,12 +191,11 @@ main {
             span {
                 &.desc {
                     font-weight: 700;
-                    line-height: 30px;
+                    line-height: 1.75rem;
                     color: var(--color-fg-muted);
 
                     @media screen and (max-width: 768px) {
-                        font-size: 16px;
-                        line-height: 26px;
+                        font-size: 15px;
                     }
                 }
             }
