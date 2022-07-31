@@ -78,6 +78,10 @@ footer {
         align-items: center;
         gap: var(--spacer-xs) var(--spacer-m);
         width: auto;
+
+        span {
+            font-size: .75rem;
+        }
     }
 }
 
@@ -108,7 +112,7 @@ main {
                     color: var(--color-white);
                 }
 
-                h1 {
+                h2 {
                     font-weight: 900;
                     display: inline-block;
                     user-select: none;
